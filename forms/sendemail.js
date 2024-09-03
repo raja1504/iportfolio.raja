@@ -5,13 +5,15 @@ function emailSend() {
     const email = document.getElementById("email-field").value;
     const subject = document.getElementById("subject-field").value;
     const message = document.getElementById("message-field").value;
+    const web = "iportfolio-raja.vercel.app";
 
     // Create the email body
     const emailBody = `
         Name: ${name}<br>
         Email: ${email}<br>
         Subject: ${subject}<br>
-        Message: ${message}
+        Message: ${message}<br>
+        From : ${web};
     `;
 
     // Send email
